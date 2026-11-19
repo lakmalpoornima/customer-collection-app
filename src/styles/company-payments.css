@@ -1,0 +1,690 @@
+
+.company-payments-page {
+  min-height: 100vh;
+  padding: 26px;
+  background: #f7f8fa;
+  color: #202938;
+  font-family: Arial, sans-serif;
+}
+
+.company-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.company-page-header h1 {
+  margin: 0 0 7px;
+  font-size: 26px;
+}
+
+.company-page-header p {
+  margin: 0;
+  color: #77808d;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.company-header-icon {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.company-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.company-summary-card {
+  padding: 17px 19px;
+  background: #fff;
+  border: 1px solid #e7eaf0;
+  border-radius: 9px;
+}
+
+.company-summary-card span,
+.company-summary-card strong,
+.company-summary-card small {
+  display: block;
+}
+
+.company-summary-card span {
+  color: #667085;
+  font-size: 13px;
+}
+
+.company-summary-card strong {
+  margin: 8px 0 5px;
+  font-size: 23px;
+}
+
+.company-summary-card small {
+  color: #8992a0;
+  font-size: 11px;
+}
+
+.company-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 6px;
+  margin-bottom: 20px;
+  background: #eef1f5;
+  border-radius: 9px;
+}
+
+.company-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #667085;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.company-tabs button.active {
+  background: #fff;
+  color: #2563eb;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.company-tab-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 12px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 11px;
+}
+
+.company-card {
+  padding: 22px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #e7eaf0;
+  border-radius: 10px;
+}
+
+.company-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.company-section-heading h2 {
+  margin: 0 0 7px;
+  font-size: 18px;
+}
+
+.company-section-heading p {
+  margin: 0;
+  color: #7b8492;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.company-warning {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 21px;
+  border: 1px solid #fde3a7;
+  border-radius: 8px;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.company-warning > svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.company-warning strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.company-warning p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.company-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.company-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.company-field-full {
+  grid-column: 1 / -1;
+}
+
+.company-field label {
+  color: #475467;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.company-field input,
+.company-field textarea,
+.company-history-filters select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid #dfe3e9;
+  border-radius: 7px;
+  outline: none;
+  background: #fff;
+  color: #202938;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.company-field input:focus,
+.company-field textarea:focus,
+.company-history-filters select:focus {
+  border-color: #2563eb;
+}
+
+.company-field textarea {
+  resize: vertical;
+}
+
+.company-search-box {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  padding: 0 11px;
+  border: 1px solid #dfe3e9;
+  border-radius: 7px;
+  color: #8992a0;
+}
+
+.company-search-box input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #202938;
+  font-size: 13px;
+}
+
+.company-customer-results {
+  max-height: 230px;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+}
+
+.company-customer-results button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 11px;
+  border: 0;
+  border-bottom: 1px solid #eef0f3;
+  background: white;
+  color: #344054;
+  text-align: left;
+  cursor: pointer;
+}
+
+.company-customer-results button:hover {
+  background: #f8fafc;
+}
+
+.company-customer-results button span {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.company-customer-results button strong {
+  font-size: 13px;
+}
+
+.company-customer-results button small {
+  color: #8992a0;
+  font-size: 11px;
+}
+
+.company-customer-results > p {
+  padding: 12px;
+  color: #8992a0;
+  font-size: 13px;
+}
+
+.company-selected-customer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px;
+  margin-top: 9px;
+  border: 1px solid #bbf7d0;
+  border-radius: 7px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-size: 13px;
+}
+
+.company-selected-customer span {
+  flex: 1;
+}
+
+.company-selected-customer button {
+  border: 0;
+  background: transparent;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.company-input-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+  border: 1px solid #dfe3e9;
+  border-radius: 7px;
+  color: #8992a0;
+}
+
+.company-input-icon input {
+  border: 0;
+}
+
+.company-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 23px;
+  padding-top: 18px;
+  border-top: 1px solid #eef0f3;
+}
+
+.company-form-footer > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #8992a0;
+  font-size: 12px;
+}
+
+.company-primary-btn,
+.company-verify-btn,
+.company-reject-btn,
+.company-refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 15px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.company-primary-btn {
+  background: #2563eb;
+  color: #fff;
+}
+
+.company-primary-btn:hover,
+.company-verify-btn:hover {
+  background: #1d4ed8;
+}
+
+.company-primary-btn:disabled,
+.company-verify-btn:disabled,
+.company-reject-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.company-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.company-status.pending,
+.company-status.partial {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.company-status.verified {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.company-status.rejected,
+.company-status.partial_rejected {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.company-refresh-btn {
+  background: #f1f5f9;
+  color: #475467;
+}
+
+.company-claims-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.company-claim-card {
+  padding: 17px;
+  border: 1px solid #e7eaf0;
+  border-radius: 9px;
+}
+
+.company-claim-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-claim-customer {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.company-claim-avatar {
+  display: grid;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.company-claim-customer strong,
+.company-claim-customer small {
+  display: block;
+}
+
+.company-claim-customer strong {
+  font-size: 14px;
+}
+
+.company-claim-customer small {
+  margin-top: 4px;
+  color: #8992a0;
+  font-size: 11px;
+}
+
+.company-claim-details {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 17px 0;
+  padding: 13px;
+  border-radius: 7px;
+  background: #f8fafc;
+}
+
+.company-claim-details span,
+.company-claim-details strong {
+  display: block;
+}
+
+.company-claim-details span {
+  margin-bottom: 6px;
+  color: #7b8492;
+  font-size: 11px;
+}
+
+.company-claim-details strong {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.verified-text {
+  color: #15803d !important;
+}
+
+.pending-text {
+  color: #c2410c !important;
+}
+
+.company-reference,
+.company-claim-notes {
+  margin: 8px 0;
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.company-verification-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #eef0f3;
+}
+
+.company-field > small {
+  color: #8992a0;
+  font-size: 11px;
+}
+
+.company-claim-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 17px;
+}
+
+.company-verify-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.company-reject-btn {
+  border: 1px solid #fecaca;
+  background: #fff;
+  color: #b91c1c;
+}
+
+.company-reject-btn:hover {
+  background: #fef2f2;
+}
+
+.company-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 15px;
+  color: #8992a0;
+  text-align: center;
+}
+
+.company-empty svg {
+  margin-bottom: 12px;
+  color: #16a34a;
+}
+
+.company-empty strong {
+  margin-bottom: 7px;
+  color: #344054;
+  font-size: 14px;
+}
+
+.company-empty p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.company-history-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.company-history-filters .company-search-box {
+  flex: 1;
+}
+
+.company-history-filters select {
+  width: 220px;
+}
+
+.company-table-wrapper {
+  overflow-x: auto;
+}
+
+.company-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.company-history-table th,
+.company-history-table td {
+  padding: 13px 11px;
+  border-bottom: 1px solid #eef0f3;
+  text-align: left;
+  font-size: 12px;
+}
+
+.company-history-table th {
+  background: #f8fafc;
+  color: #667085;
+  font-weight: 600;
+}
+
+.company-history-table td strong,
+.company-history-table td small {
+  display: block;
+}
+
+.company-history-table td small {
+  margin-top: 4px;
+  color: #8992a0;
+  font-size: 10px;
+}
+
+.rejection-reason {
+  max-width: 170px;
+  white-space: normal;
+  color: #b91c1c !important;
+}
+
+.company-table-empty {
+  padding: 30px !important;
+  color: #8992a0;
+  text-align: center !important;
+}
+
+@media (max-width: 850px) {
+  .company-claim-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .company-payments-page {
+    padding: 15px;
+  }
+
+  .company-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .company-tabs {
+    flex-direction: column;
+  }
+
+  .company-tabs button {
+    justify-content: flex-start;
+  }
+
+  .company-form-grid,
+  .company-verification-form {
+    grid-template-columns: 1fr;
+  }
+
+  .company-field-full {
+    grid-column: auto;
+  }
+
+  .company-form-footer,
+  .company-section-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .company-claim-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .company-claim-actions {
+    flex-direction: column-reverse;
+  }
+
+  .company-claim-actions button {
+    width: 100%;
+  }
+
+  .company-history-filters {
+    flex-direction: column;
+  }
+
+  .company-history-filters select {
+    width: 100%;
+  }
+}

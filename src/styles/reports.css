@@ -1,0 +1,289 @@
+.reports-page {
+  padding: 20px;
+  width: 100%;
+  color: var(--cui-body-color, #333);
+}
+
+.reports-header {
+  margin-bottom: 20px;
+}
+
+.reports-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.reports-header p {
+  color: #777;
+  margin: 0;
+  font-size: 14px;
+}
+
+.report-filter-card {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.report-date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 180px;
+}
+
+.report-date-field label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.report-date-field input {
+  height: 40px;
+  border: 1px solid #d5d9df;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.report-search-button {
+  height: 40px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 6px;
+  background: #321fdb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.report-search-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.report-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.report-summary-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px;
+  min-width: 0;
+}
+
+.report-summary-card span {
+  display: block;
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.report-summary-card strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.report-summary-card small {
+  display: block;
+  color: #888;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.report-summary-card.cash strong {
+  color: #198754;
+}
+
+.report-summary-card.direct strong {
+  color: #0d6efd;
+}
+
+.report-summary-card.handover strong {
+  color: #dc3545;
+}
+
+.report-summary-card.net strong {
+  color: #321fdb;
+}
+
+.report-transactions-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 0;
+}
+
+.report-transactions-header {
+  margin-bottom: 18px;
+}
+
+.report-transactions-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.report-transactions-header p {
+  color: #888;
+  font-size: 13px;
+  margin: 0;
+}
+
+.report-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+.report-tabs button {
+  border: none;
+  background: transparent;
+  padding: 11px 15px;
+  color: #777;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.report-tabs button.active {
+  color: #321fdb;
+  border-bottom-color: #321fdb;
+}
+
+.report-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.report-table th {
+  background: #f7f8fa;
+  color: #555;
+  font-weight: 600;
+  text-align: left;
+  padding: 13px 12px;
+  white-space: nowrap;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.report-table td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.report-type {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.type-cash {
+  background: #e8f5ee;
+  color: #198754;
+}
+
+.type-direct {
+  background: #eaf2ff;
+  color: #0d6efd;
+}
+
+.type-handover {
+  background: #fff0f0;
+  color: #dc3545;
+}
+
+.amount-column {
+  text-align: right !important;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.amount-in {
+  color: #198754;
+}
+
+.amount-out {
+  color: #dc3545;
+}
+
+.report-empty {
+  text-align: center;
+  padding: 35px !important;
+  color: #888;
+}
+
+.report-table-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  margin-top: 5px;
+  color: #777;
+  font-size: 13px;
+}
+
+.report-table-footer strong {
+  color: #321fdb;
+}
+
+@media (max-width: 576px) {
+  .reports-page {
+    padding: 12px;
+  }
+
+  .report-filter-card,
+  .report-transactions-card {
+    padding: 15px;
+  }
+
+  .report-date-field {
+    width: 100%;
+  }
+
+  .report-search-button {
+    width: 100%;
+  }
+
+  .report-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .report-summary-card {
+    padding: 13px;
+  }
+
+  .report-summary-card strong {
+    font-size: 16px;
+  }
+}

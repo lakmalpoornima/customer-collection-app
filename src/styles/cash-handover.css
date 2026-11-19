@@ -1,0 +1,252 @@
+.cash-handover-page {
+  padding: 20px;
+  width: 100%;
+  color: var(--cui-body-color, #333);
+}
+
+.handover-page-header {
+  margin-bottom: 20px;
+}
+
+.handover-page-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.handover-page-header p,
+.handover-history-header p {
+  color: #777;
+  margin: 0;
+  font-size: 14px;
+}
+
+.handover-balance-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.handover-balance-card span {
+  color: #777;
+  font-size: 14px;
+}
+
+.handover-balance-card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 8px 0 0;
+  color: #198754;
+}
+
+.handover-balance-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e8f5ee;
+  color: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.handover-content {
+  display: grid;
+  grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.handover-form-card,
+.handover-history-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  min-width: 0;
+}
+
+.handover-form-card h3,
+.handover-history-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.handover-form-group {
+  margin-bottom: 17px;
+}
+
+.handover-form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.handover-form-group input,
+.handover-form-group select,
+.handover-form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d5d9df;
+  border-radius: 7px;
+  font-size: 14px;
+  background: #fff;
+  color: #333;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.handover-form-group input:focus,
+.handover-form-group select:focus,
+.handover-form-group textarea:focus {
+  border-color: #321fdb;
+  box-shadow: 0 0 0 2px rgba(50, 31, 219, 0.08);
+}
+
+.handover-form-group textarea {
+  resize: vertical;
+}
+
+.handover-form-group small {
+  display: block;
+  margin-top: 6px;
+  color: #777;
+  font-size: 12px;
+}
+
+.required-label {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+.handover-save-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #321fdb;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.handover-save-button:hover:not(:disabled) {
+  background: #2818b8;
+}
+
+.handover-save-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.handover-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.handover-history-header h3 {
+  margin-bottom: 5px;
+}
+
+.handover-refresh-button {
+  border: 1px solid #d5d9df;
+  background: #fff;
+  border-radius: 6px;
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.handover-refresh-button:hover:not(:disabled) {
+  background: #f5f5f5;
+}
+
+.handover-refresh-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.handover-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.handover-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.handover-table th {
+  background: #f7f8fa;
+  color: #555;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px;
+  white-space: nowrap;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.handover-table td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.handover-recipient {
+  font-weight: 600;
+}
+
+.handover-amount {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.handover-empty {
+  padding: 35px 15px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .handover-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .cash-handover-page {
+    padding: 12px;
+  }
+
+  .handover-form-card,
+  .handover-history-card {
+    padding: 16px;
+  }
+
+  .handover-balance-card {
+    padding: 18px;
+  }
+
+  .handover-balance-card h2 {
+    font-size: 23px;
+  }
+}
