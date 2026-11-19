@@ -13,6 +13,7 @@ import {
 import { db } from "../database/db";
 import "../styles/customers.css";
 
+
 const emptyForm = {
   name: "",
   phone: "",
@@ -85,6 +86,7 @@ function Customers() {
     setEditingId(null);
     setForm(emptyForm);
   };
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
