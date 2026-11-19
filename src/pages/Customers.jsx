@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 
 import { db } from "../database/db";
-import "../styles/customers.css";
+import "../styles/cust.css";
 
 
 const emptyForm = {
